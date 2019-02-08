@@ -1,0 +1,17 @@
+{
+  "name": "hello.apib.mocking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "hello.api:doc": "aglio -i hello.apib -s",
+    "hello.api:mock": "drakov -f hello.apib --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aglio": "^2.3.0",
+    "drakov": "^1.0.4"
+  }
+}

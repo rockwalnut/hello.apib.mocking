@@ -1,0 +1,111 @@
+
+## Login Collection [/interfaceDFL/rest/authenUser/1.0]
+### Login Action [POST]
+
+# Complete
++ Request (application/json)
+
+        {
+            "headerData": {
+                "messageId": "3fe0a3c63603b7ea",
+                "sentDateTime": "10-08-2018 11:06:46"
+                },
+            "requestRecord": {
+                "username":"Test01", 
+                "password":"03AC674216F3E15C761EE1A5E255F067953623C8B388B4459E13F978D7C846F4" , 
+                "app_id":"1" ,
+                "group_code":"KSR"
+                }
+        }
+
++ Response 200 (application/json)
+
+        
+        {
+            "responseRecord": {
+                "branchCode": "00131",
+                "branchName": "สาขาสะพานเหลือง",
+                "branchRegion": "M",
+                "titleName": null,
+                "positionName": null,
+                "email": null,
+                "user_id": "1",
+                "firstName": "สุขประเสริฐ",
+                "lastName": "เจริญสหกิจกุล",
+                "licenseNo": "5503014685",
+                "branchGroup": "Branch",
+                "moblie": null,
+                "employeeID": "13987",
+                "licenseExpire": "25630924",
+                "positionID": null
+            },
+            "responseStatus": {
+                "errorCode": "S",
+                "statusCode": "200",
+                "errorMessage": "SUCCESS"
+            },
+            "headerData": {
+                "totalRecord": null,
+                "messageId": "3fe0a3c63603b7ea",
+                "sentDateTime": "10-08-2018 11:06:46",
+                "responseDateTime": "14-01-2019 09:58:02",
+                "recordPerPage": null,
+                "requestPage": null
+            }
+        }
+        
+        
+## Login Collection [/interfaceDFL/rest/authenUser/1.0]
+### Login Action [POST]
+
+# License expired
++ Request (application/json)
+
+       
+        {
+            "headerData": {
+                "messageId": "3fe0a3c63603b7ea",
+                "sentDateTime": "10-08-2018 11:06:46"
+                },
+            "requestRecord": {
+                "username":"Test02", 
+                "password":"03AC674216F3E15C761EE1A5E255F067953623C8B388B4459E13F978D7C846F4" , 
+                "app_id":"1" ,
+                "group_code":"KSR"
+                }
+        }
+
++ Response 200 (application/json)
+
+             {
+            "responseRecord": {
+                "branchCode": "00131",
+                "branchName": "สาขาสะพานเหลือง",
+                "branchRegion": "M",
+                "titleName": null,
+                "positionName": null,
+                "email": null,
+                "user_id": "1",
+                "firstName": "ธัญดล",
+                "lastName": "จันทรวงศ์",
+                "licenseNo": "5503014685",
+                "branchGroup": "Branch",
+                "moblie": null,
+                "employeeID": "13987",
+                "positionID": null
+            },
+            "responseStatus": {
+                "errorCode": "S",
+                "statusCode": "200",
+                "errorMessage": "SUCCESS"
+            },
+            "headerData": {
+                "totalRecord": null,
+                "messageId": "3fe0a3c63603b7ea",
+                "sentDateTime": "10-08-2018 11:06:46",
+                "responseDateTime": "14-01-2019 09:58:02",
+                "recordPerPage": null,
+                "requestPage": null
+            }
+        }
+        
